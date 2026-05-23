@@ -60,7 +60,7 @@ CREATE TABLE admin_users (
 -- Insert a default admin (change credentials!)
 -- Generate password hash using: bcrypt.hash('your_password', 10)
 INSERT INTO admin_users (email, password_hash)
-VALUES ('admin@vjclub.com', '$2a$10$YourHashedPasswordHere');
+VALUES ('vjclubadmin', '$2b$10$VA8HS9oBv8ChYkyBlHDVQe8tuubOmixEMEFGdavF/mOkWd0yNYyii');
 
 -- Enable realtime for chat_messages table
 ALTER TABLE chat_messages REPLICA IDENTITY FULL;
